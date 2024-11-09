@@ -37,7 +37,6 @@ def my_func () -> dict:
         sum_value = 0
         average_value = 0
 
-
     print(finall_dict)
     return finall_dict
 
