@@ -1,13 +1,16 @@
 from Point import Point
+from color import Color
 class Rectangle:
-    def __init__(self, l , w , point):
+    def __init__(self, l , w , Point , Color):
         self.width = w
         self.length = l
         self.area_cal_counter = 0
-        self.corner = point
+        self.corner = Point
+        self.Color = Color
 
     def __repr__(self):
-        return f"rectangle with:{self.width} and length:{self.length}"
+        return (f"rectangle with width:{self.width} and length:{self.length}"
+                f" and point{self.corner}  and color:{self.Color}")
     def __eq__(self, other):
         return self.area() == other.area()
     def __gt__(self, other):
